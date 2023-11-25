@@ -25,7 +25,7 @@ fly launch
 ```
 
 ### Note
-- อันนี้ผม deploy ไว้ ลองเข้าไปดูได้ครับ [Link](https://albedo.fly.dev/form3?id=6510749999)
+- อันนี้ผม deploy ไว้ ลองเข้าไปดูได้ครับ [https://albedo.fly.dev/form3?id=6510749999](https://albedo.fly.dev/form3?id=6510749999)
 - จะเห็นปัญหาว่า wkhtmltopdf พอมัน render ใน linux มันจะไม่เหมือน render ใน macos, window (อ้างอิงจากภาพด้านล่าง render ใน macos) ซึ่งปัญหาเท่าที่อ่าน stack overflow มา เป็นเพราะ version ของ wkhtmltopdf ตอนนี้เราใช้ 0.12.6 เขาแนะนำให้อัพเป็น 0.13.*
 - ผมมีการปรับชื่อ column ในไฟล์ form3response.csv ใหม่ เพราะเดิมมีชื่อ column ซ้ำ ซึ่งผมจะใช้ชื่อ column ในการดึงข้อมูล ดังนั้นถ้าเอาไฟล์ csv ใหม่มา อย่าลืมปรับชื่อ column ตามด้วยนะครับ
 - ถ้าจะทำให้มันดึง google form response มาจาก google sheet เลยก็ทำได้นะครับ ผมสร้าง agent ไว้แล้ว แค่เพิ่ม permission เข้าถึง google sheet ให้มัน (code ผมเก็บไว้อยู่อีกโปรเจคนึง)
