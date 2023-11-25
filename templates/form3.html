@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form 3</title>
+  </head>
+  <body>
+    <div>
+      <img
+        src="data:;base64,{{tse_logo_base64}}"
+        style="position: absolute; top: 8px"
+        width="210"
+      />
+      <p class="form-name">แบบฟอร์มที่ 3</p>
+      <div style="margin-left: 30%; width: 60%; padding-top: 3px">
+        <h2>สาขาวิชาวิศวกรรมซอฟต์แวร์</h2>
+        <p style="font-weight: 200">
+          <span class="tab"></span>คณะวิศวกรรมศาสตร์ มหาวิทยาลัยธรรมศาสตร์
+          ศูนย์รังสิต
+        </p>
+        <p style="font-weight: 200">
+          <span class="tab"></span>99 หมู่ 18 ถ.พหลโยธิน คลองหลวง รังสิต
+          ปทุมธานี 12121
+        </p>
+        <p style="font-weight: 200">
+          <span class="tab"></span>Tel. 02 564 3001 -9 ต่อ 3279, 3234 อีเมล :
+          sirinya@engr.tu.ac.th
+        </p>
+      </div>
+
+      <br />
+      <hr />
+
+      <h1>
+        แบบคำร้องขอหนังสือขอความอนุเคราะห์รับนักศึกษาฝึกงานในวิชาชีพด้านวิศวกรรมซอฟต์แวร์ระยะยาว
+      </h1>
+      <p style="font-size: 15px">
+        <span style="text-decoration: underline">คำชี้แจง</span>
+        ให้นักศึกษาเขียนข้อมูลเพื่อขอให้โครงการฯ ทำหนังสือขอความอนุเคราะห์
+        โดยตรวจสอบข้อมูลให้ถูกต้องและกรอกข้อมูลด้วยตัวบรรจง
+      </p>
+
+      <br />
+
+      <p style="font-weight: 400">(ผู้ให้ข้อมูล : นักศึกษา)</p>
+      <p>
+        ข้าพเจ้า <span class="u">{{ student.name }}</span> นักศึกษาชั้นปีที่
+        <span class="u">3</span> สาขาวิชา
+        <span class="u">วิศวกรรมซอฟต์แวร์</span> คณะ
+        <span class="u">วิศวกรรมศาสตร์</span>
+      </p>
+      <p>
+        มีความประสงค์จะให้โครงการฯ จัดทำหนังสือขอความอนุเคราะห์
+        สถานประกอบการเพื่อเข้าปฏิบัติงานการฝึกงานในวิชาชีพด้านวิศวกรรมซอฟต์แวร์
+      </p>
+      <p>
+        ระยะยาวในภาคเรียนที่ <span class="u">2</span> ปีการศึกษา
+        <span class="u">2566</span> ตั้งแต่วันที่
+        <span class="u">{{ fromdate }}</span> ถึงวันที่
+        <span class="u">{{ todate }}</span>
+      </p>
+      <p>ชื่อสถานประกอบการ <span class="u">{{ company }}</span></p>
+      <p>
+        ที่อยู่เลขที่ <span class="u">{{ addr.no }}</span> ซอย
+        <span class="u">{{ addr.alley }}</span> ถนน
+        <span class="u">{{ addr.street }}</span> แขวง/ตําบล
+        <span class="u">{{ addr.subdistrict }}</span>
+      </p>
+      <p>
+        เขต/อำเภอ <span class="u">{{ addr.district }}</span> จังหวัด
+        <span class="u">{{ addr.province }}</span> รหัสไปรษณีย์
+        <span class="u">{{ addr.postalcode}}</span> โทรศัพท์
+        <span class="u">{{ addr.phone }}</span>
+      </p>
+
+      <div style="margin-top: 25px"></div>
+      <p style="font-weight: 400">
+        ชื่อ-สกุล หรือ ตําแหน่ง ของผู้รับหนังสือขอความอนุเคราะห์ (ให้ระบุชื่อ /
+        ตําแหน่งงาน เช่น หัวหน้าฝ่ายบุคคล, ผู้จัดการ, อื่น ๆ)
+      </p>
+      <p>
+        ชื่อ-สกุล <span class="u">{{ recipient.name }}</span> ตำแหน่ง
+        <span class="u">{{ recipient.role }}</span>
+      </p>
+      <p>
+        เบอร์โทรศัพท์ <span class="u">{{ recipient.phone }}</span> E-mail
+        <span class="u">{{ recipient.email }}</span>
+      </p>
+
+      <div style="margin-top: 25px"></div>
+      <p style="font-weight: 400">
+        ลักษณะงานที่ไปฝึกงานระยะยาวตามที่นักศึกษาได้ติดต่อสอบถาม
+      </p>
+      <p style="line-height: 20px">
+        ตำแหน่ง <span class="u">{{ job }}</span> ลักษณะงาน
+        <span class="u">{{ job_description }}</span>
+      </p>
+
+      <div style="margin-top: 25px"></div>
+      <p style="font-weight: 400">ผู้ประสานงานในการติดต่อและส่งเอกสาร</p>
+      <p>
+        ชื่อ-สกุล <span class="u">{{ coordinator.name }}</span> ตำแหน่ง
+        <span class="u">{{ coordinator.role }}</span>
+      </p>
+      <p>
+        เบอร์โทรศัพท์ <span class="u">{{ coordinator.phone }}</span> E-mail
+        <span class="u">{{ coordinator.email }}</span>
+      </p>
+
+      <div style="margin-top: 25px"></div>
+      <p style="font-weight: 400">
+        รายชื่อนักศึกษาที่ขอฝึกงานในวิชาชีพด้านวิศวกรรมซอฟต์แวร์ระยะยาวจำนวน 1
+        ราย คือ
+      </p>
+      <p>
+        1. ชื่อ <span class="u">{{ student.name }}</span> เลขทะเบียน
+        <span class="u">{{ student.id }}</span>
+      </p>
+      <p style="margin-left: 17px">
+        เบอร์โทรศัพท์ <span class="u">{{ student.phone }}</span> E-Mail
+        <span class="u">{{ student.email }}</span>
+      </p>
+
+      <br /><br />
+
+      <table class="signature-box" style="margin: auto; margin-top: 15px">
+        <tr>
+          <td>
+            <p>ลงชื่อ</p>
+            <br />
+            <p>.......................................................</p>
+            <p>(.......................................................)</p>
+            <p>วันที่ ........... เดือน ............... พ.ศ. .......</p>
+            <p>นักศึกษา</p>
+          </td>
+          <td>
+            <p class="left"><span class="tab"></span>&#x2751; เห็นควรอนุญาต</p>
+            <p class="left">
+              <span class="tab"></span>&#x2751; อื่น ๆ ระบุ
+              ....................................
+            </p>
+            <br />
+            <p>.......................................................</p>
+            <p>(.......................................................)</p>
+            <p>วันที่ ........... เดือน ............... พ.ศ. .......</p>
+            <p>อาจารย์ผู้ประสานงาน</p>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </body>
+</html>

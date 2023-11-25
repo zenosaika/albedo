@@ -1,0 +1,67 @@
+@import url("https://fonts.googleapis.com/css2?family=Sarabun:wght@200;400&display=swap");
+
+body {
+  font-size: 15px;
+  line-height: 95%;
+  word-wrap: break-word;
+  font-family: "Sarabun", sans-serif;
+}
+
+.keep-together {
+  page-break-inside: avoid;
+}
+
+.center {
+  text-align: center;
+}
+
+.right {
+  text-align: right;
+}
+
+.left {
+  text-align: left;
+}
+
+.tab {
+  display: inline-block;
+  margin-left: 20px;
+}
+
+h1,
+h2 {
+  font-size: 18px;
+}
+
+p {
+  font-weight: 200;
+}
+
+.form-name {
+  position: absolute;
+  left: 85%;
+  border: 1px solid;
+  padding: 10px;
+  font-weight: 400;
+}
+
+.signature-box {
+  width: 90%;
+  text-align: center;
+}
+
+.u {
+  border-bottom: 1.75px dotted black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.border {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+table, td {
+    border: 1px solid black;  
+    border-collapse: collapse;
+}
